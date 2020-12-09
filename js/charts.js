@@ -3,7 +3,7 @@ var skillTechnologyChar = new Chart(document.getElementById("skillTechnology"), 
     "data": {
         "labels": ["C#", "Nodejs", "SQL", "Scrum", "React", "Python", "Asp.Net MVC"],
         "datasets": [{
-            "label": "Skill technology",
+            "label": "Technology skills - Years",
             "data": [8, 2, 10, 4, 2, 3, 8],
             "fill": false,
             "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
@@ -33,7 +33,7 @@ var personalSkillChar = new Chart(document.getElementById("personalSkill"), {
     "data": {
         "labels": ["problem solving", "Teamwork", "written communication", "Leadership"],
         "datasets": [{
-            "label": "Skill technology",
+            "label": "Personal skills - %",
             "data": [90, 85, 75, 70],
             "fill": false,
             "backgroundColor": ["RGBA(77,183,141,0.37)","RGBA(77,183,141,0.37)","RGBA(77,183,141,0.37)","RGBA(77,183,141,0.37)"
