@@ -36,7 +36,7 @@ var personalSkillChar = new Chart(document.getElementById("personalSkill"), {
             "label": "Personal skills - %",
             "data": [90, 85, 75, 70],
             "fill": false,
-            "backgroundColor": ["RGBA(77,183,141,0.37)","RGBA(77,183,141,0.37)","RGBA(77,183,141,0.37)","RGBA(77,183,141,0.37)"
+            "backgroundColor": ["RGBA(77,183,141,0.40)","RGBA(77,183,141,0.30)","RGBA(77,183,141,0.20)","RGBA(77,183,141,0.10)"
             ],
             "borderColor": ["RGB(77,183,141)","RGB(77,183,141)","RGB(77,183,141)","RGB(77,183,141)"
             ],
