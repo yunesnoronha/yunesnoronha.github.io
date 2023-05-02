@@ -50,7 +50,7 @@ type ExperienceProps = {
 
 const Experience = ({ title, date, company, activities, technologies }: ExperienceProps) => {
   return (
-    <Box mb="sm" p={'sm'}>
+    <Box mb="sm" p={'xs'}>
       <Title order={5}>{title}</Title>
       <Text mb={4} color={'cyan'} weight={500}>
         {company} | {date}
@@ -137,7 +137,7 @@ const CV = () => {
               ]}
               technologies={['React', 'Next.js', 'Typescript', 'Node.js', 'PostgreSQL', 'AWS']}
             />
-            <Divider mb={'lg'} />
+            <Divider mb={'md'} />
             <Experience
               title="Software Engineer"
               date="Nov 2018 – Dec 2019"
@@ -162,7 +162,7 @@ const CV = () => {
                 'AWS',
               ]}
             />
-            <Divider mb={'lg'} />
+            <Divider mb={'md'} />
             <Experience
               title="Analyst developer"
               date="ago 2018 – Dec 2018"
@@ -173,7 +173,7 @@ const CV = () => {
               ]}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS', 'MVC', 'ETL Process', 'RPA']}
             />
-            <Divider mb={'lg'} />
+            <Divider mb={'md'} />
             <Experience
               title="Software developer"
               date="Nov 2017 – Ago 2018"
@@ -183,7 +183,7 @@ const CV = () => {
               ]}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS', 'MVC', 'RPA']}
             />
-            <Divider mb={'lg'} />
+            <Divider mb={'md'} />
             <Experience
               title="Software Developer"
               date="Set 2013 – Apr 2016"
@@ -191,7 +191,7 @@ const CV = () => {
               activities={['Development of programs for retail, fiscal and tax solutions in C#.']}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS']}
             />
-            <Divider mb={'lg'} />
+            <Divider mb={'md'} />
             <Experience
               title="Software Developer"
               date="Jun 2012 – Set 2013"
@@ -202,7 +202,7 @@ const CV = () => {
               ]}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS']}
             />
-            <Divider mb={'lg'} />
+            <Divider mb={'md'} />
           </Flex>
           <Divider orientation="vertical" size="xs" ml={'xl'} />
           <Flex direction="column" w={isMobile ? '50%' : '30%'} pl="lg">

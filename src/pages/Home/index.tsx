@@ -262,7 +262,13 @@ export default function Home() {
             experience.
           </Text>
           <Group>
-            <Button color={'cyan'} leftIcon={<IconDownload />} component="a" href="/CV.pdf" download>
+            <Button
+              color={'cyan'}
+              leftIcon={<IconDownload />}
+              component="a"
+              href={process.env.PUBLIC_URL + '/CV/CV.pdf'}
+              download
+            >
               Download CV
             </Button>
             <Button color={'cyan'} leftIcon={<IconFileCertificate />} component={Link} to={'/CV'}>
