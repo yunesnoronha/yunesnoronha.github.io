@@ -1,7 +1,6 @@
 import { ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core';
 import { useState } from 'react';
-import { Route, Router, Routes } from 'react-router-dom';
-import About from './pages/About';
+import { Route, Routes } from 'react-router-dom';
 import CV from './pages/CV';
 import Home from './pages/Home';
 
@@ -14,7 +13,10 @@ export default function App() {
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider
-        theme={{ fontFamily: 'Montserrat, helvetica neue, Helvetica, Arial, sans-serif;' }}
+        theme={{
+          colorScheme,
+          fontFamily: 'Montserrat, helvetica neue, Helvetica, Arial, sans-serif;',
+        }}
         withGlobalStyles
         withNormalizeCSS
       >

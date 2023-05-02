@@ -1,4 +1,4 @@
-import { Container, Group, Header, Title } from '@mantine/core';
+import { Container, Group, Header, Title, useMantineColorScheme } from '@mantine/core';
 import DarkThemeChange from '../DarkThemeChange';
 
 const noPrint = {
@@ -9,11 +9,12 @@ const noPrint = {
   },
 };
 const HeaderNav = () => {
+  const { colorScheme } = useMantineColorScheme();
   const sx = {
     height: '100%',
   };
   return (
-    <Header height={70} bg="#ffff" sx={noPrint}>
+    <Header height={70} bg={colorScheme === 'dark' ? 'dark' : '#ffff'} sx={noPrint}>
       <Container sx={sx}>
         <Group position="apart" noWrap align={'center'} sx={sx}>
           <Title order={2}>Yunes Noronha</Title>

@@ -2,7 +2,6 @@ import {
   ActionIcon,
   AppShell,
   Avatar,
-  Box,
   Button,
   Card,
   Container,
@@ -15,7 +14,9 @@ import {
   Stack,
   Text,
   Title,
+  useMantineColorScheme,
 } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -24,9 +25,8 @@ import {
   IconFileCertificate,
   IconMailForward,
 } from '@tabler/icons-react';
-import { useMediaQuery } from '@mantine/hooks';
-import HeaderNav from '../../components/Header';
 import { Link } from 'react-router-dom';
+import HeaderNav from '../../components/Header';
 
 const skills = [
   {
@@ -203,7 +203,7 @@ const RenderSkills = ({ isMobile, skills }: { isMobile: boolean; skills: any }) 
 export default function Home() {
   const yearExperience = new Date().getFullYear() - 2012;
   const isMobile: boolean = useMediaQuery('(max-width: 767px)');
-
+  const { colorScheme } = useMantineColorScheme();
   return (
     <AppShell
       header={<HeaderNav />}
@@ -215,7 +215,7 @@ export default function Home() {
         },
       })}
     >
-      <Container bg={'#F8F9FA'} mb={'lg'}>
+      <Container bg={colorScheme === 'dark' ? 'dark' : '#F8F9FA'} mb={'lg'}>
         <Stack align={'center'} mt={'md'}>
           <Image
             width={256}
@@ -277,7 +277,7 @@ export default function Home() {
           </Group>
         </Stack>
       </Container>
-      <Flex bg={'#ffff'}>
+      <Flex bg={colorScheme === 'dark' ? 'dark' : '#ffff'}>
         <Container mb={'md'}>
           <Stack align={'center'} mt={'md'}>
             <Title order={1}>Know Me More</Title>
@@ -302,7 +302,7 @@ export default function Home() {
           </Stack>
         </Container>
       </Flex>
-      <Flex bg={'#F8F9FA'} mb={'md'}>
+      <Flex bg={colorScheme === 'dark' ? 'dark' : '#F8F9FA'} mb={'md'}>
         <Container mb={'md'}>
           <Stack align={'center'} mt={'md'}>
             <Title order={1}>A summary of My Resume</Title>
@@ -325,7 +325,7 @@ export default function Home() {
           </SimpleGrid>
         </Container>
       </Flex>
-      <Flex bg={'#ffff'} mb={'md'} p={'md'} wrap="wrap">
+      <Flex bg={colorScheme === 'dark' ? 'dark' : '#ffff'} mb={'md'} p={'md'} wrap="wrap">
         <Container>
           <Title align="center" m={'md'} order={1}>
             My Skills
@@ -335,7 +335,7 @@ export default function Home() {
           </Flex>
         </Container>
       </Flex>
-      <Flex bg={'#F8F9FA'} mb={'md'} p={'md'} wrap="wrap">
+      <Flex bg={colorScheme === 'dark' ? 'dark' : '#F8F9FA'} mb={'md'} p={'md'} wrap="wrap">
         <Container>
           <Title align="center" m={'md'} order={1}>
             Personal Skills
@@ -345,7 +345,7 @@ export default function Home() {
           </Flex>
         </Container>
       </Flex>
-      <Flex bg={'#ffff '} gap="md">
+      <Flex bg={colorScheme === 'dark' ? 'dark' : '#ffff '} gap="md">
         <Container mb={'md'}>
           <Stack align={'center'} mt={'md'}>
             <Title order={1}>Portfolio</Title>
