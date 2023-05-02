@@ -1,12 +1,19 @@
 import { Container, Group, Header, Title } from '@mantine/core';
 import DarkThemeChange from '../DarkThemeChange';
 
+const noPrint = {
+  '@media print': {
+    margin: 0,
+
+    display: 'none',
+  },
+};
 const HeaderNav = () => {
   const sx = {
     height: '100%',
   };
   return (
-    <Header height={70} bg="#ffff">
+    <Header height={70} bg="#ffff" sx={noPrint}>
       <Container sx={sx}>
         <Group position="apart" noWrap align={'center'} sx={sx}>
           <Title order={2}>Yunes Noronha</Title>

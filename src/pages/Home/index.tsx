@@ -90,25 +90,25 @@ const personalSkills = [
 ];
 const education = [
   {
-    name: 'MBA em Gestão da tecnologia da informação',
+    name: 'MBA in Information Technology Management',
     avatar: '/img/impacta.jfif',
     date: '2018 - 2019',
-    company: 'Faculdade Impacta Tecnologia',
-    description: 'Pós graduação em Gestão da tecnologia da informação.',
+    company: 'College Impacta Tecnologia',
+    description: 'Masters Degree in Information Technology Management.',
   },
   {
-    name: 'Tecnólogo Análise e desenvolvimento de sistemas ',
+    name: 'Technologist Systems analysis and development',
     avatar: '/img/fatec.jfif',
     date: '2014 - 2017',
     company: 'Fatec - Praia Grande',
-    description: 'Formado em Análise e desenvolvimento de sistemas pela fatec',
+    description: 'Graduated in Systems Analysis and Development by Fatec',
   },
   {
-    name: 'Técnico de informatica - Desenvolvimento de sistemas',
+    name: 'IT Technician - Systems Development',
     avatar: '/img/etec.png',
     date: '2011 - 2012',
     company: 'Etec - Praia Grande',
-    description: 'Técnico de informatica com foco em desenvolvimento de sistemas',
+    description: 'IT technician with a focus on systems development',
   },
 ];
 const experience = [
@@ -117,28 +117,30 @@ const experience = [
     avatar: '/img/claro.jfif',
     date: '2018 - actual',
     company: 'Claro - São Paulo',
-    description: 'Full Stack Developer',
+    description:
+      'Fullstack Developer at Claro. Create and support React applications. RPA Digital - Create and support RPA Digital applications.',
   },
   {
-    name: 'Analista de desenvolvimento de sistemas',
+    name: 'Developer at TCS',
     avatar: '/img/tcs.jfif',
     date: '2018 - 2018',
     company: 'Tata Consultancy Services · São Paulo',
-    description: 'Full Stack Developer',
+    description:
+      'Fullstack Developer at TCS. Build solutions in ASP.net MVC and Microsoft SQL Server. Build RPA solutions to legacy systems.',
   },
   {
-    name: 'Desenvolvedor de software',
+    name: 'Developer at Indigosoft',
     avatar: '/img/indigo.jfif',
     date: '2017 - 2018',
     company: 'Indigosoft',
-    description: 'Full Stack Developer',
+    description: 'C# developer at Indigosoft. Build RPA solutions in C# applications at Telecom customers.',
   },
   {
-    name: 'Analista de software',
+    name: 'Developer at GSF Service',
     avatar: '/img/gsf.jfif',
     date: '2013 - 2016',
     company: 'GSF Service',
-    description: 'Full Stack Developer',
+    description: 'Build solutions in ASP.net MVC and Microsoft SQL Server at Retail Customer. ',
   },
 ];
 const RenderEducation = () => {
@@ -187,7 +189,7 @@ const RenderSkills = ({ isMobile, skills }: { isMobile: boolean; skills: any }) 
   return (
     <>
       {skills.map((skill: any) => (
-        <Flex direction={'column'} sx={{ width: `${isMobile ? `350px` : `400px`}` }}>
+        <Flex direction={'column'} sx={{ width: `${isMobile ? `300px` : `400px`}` }}>
           <Flex justify={'space-between'}>
             <Text size={'md'}>{skill.name}</Text>
             <Text size={'md'}> {skill.level}</Text>
@@ -223,16 +225,34 @@ export default function Home() {
             alt="Yunes Noronha"
           />
           <Group>
-            <ActionIcon color={'cyan'} variant="subtle" size={48}>
+            <ActionIcon
+              color={'cyan'}
+              variant="subtle"
+              size={48}
+              component="a"
+              href={'https://www.linkedin.com/in/yunesnoronha/'}
+            >
               <IconBrandLinkedin stroke={1.5} />
             </ActionIcon>
-            <ActionIcon color={'cyan'} variant="subtle" size={48}>
+            <ActionIcon color={'cyan'} variant="subtle" size={48} component="a" href={'mailto:yunesnoronha@gmail.com'}>
               <IconMailForward stroke={1.5} />
             </ActionIcon>
-            <ActionIcon color={'cyan'} variant="subtle" size={48}>
+            <ActionIcon
+              color={'cyan'}
+              variant="subtle"
+              size={48}
+              component="a"
+              href={'https://github.com/yunesnoronha'}
+            >
               <IconBrandGithub stroke={1.5} />
             </ActionIcon>
-            <ActionIcon color={'cyan'} variant="subtle" size={48}>
+            <ActionIcon
+              color={'cyan'}
+              variant="subtle"
+              size={48}
+              component="a"
+              href={'https://api.whatsapp.com/send?phone=5513981949758'}
+            >
               <IconBrandWhatsapp stroke={1.5} />
             </ActionIcon>
           </Group>
@@ -255,7 +275,7 @@ export default function Home() {
         <Container mb={'md'}>
           <Stack align={'center'} mt={'md'}>
             <Title order={1}>Know Me More</Title>
-            <SimpleGrid cols={2}>
+            <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
               <Text size="lg" ta="justify">
                 I'm a Fullstack developer passionate about technology. I like to develop simple, clean and elegant
                 websites that provide real value to the end user. Simple is always the best. <br />I have{' '}
@@ -337,6 +357,21 @@ export default function Home() {
               <Text mt="xs" color="dimmed" size="sm">
                 Desenvolvido por Yunes Noronha, 2023.
               </Text>
+              <Link to={'https://yunesnoronha.com/'}>Yunes Noronha</Link>
+            </Card>
+            <Card shadow="sm" p="xl">
+              <Card.Section>
+                <Image src={process.env.PUBLIC_URL + 'img/port-gsf.png'} height={260} alt="Meu site" />
+              </Card.Section>
+
+              <Text weight={600} align={'center'} size="lg" mt="md">
+                GSF Service
+              </Text>
+
+              <Text mt="xs" color="dimmed" size="sm">
+                Desenvolvido por Yunes Noronha e Andrey Naldoni, 2018.
+              </Text>
+              <Link to={'https://gsfservice.com.br/'}>GSF Service</Link>
             </Card>
           </SimpleGrid>
         </Container>
