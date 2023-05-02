@@ -2,6 +2,7 @@ import { ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core
 import { useState } from 'react';
 import { Route, Router, Routes } from 'react-router-dom';
 import About from './pages/About';
+import CV from './pages/CV';
 import Home from './pages/Home';
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/CV" element={<CV />} />
         </Routes>
       </MantineProvider>
     </ColorSchemeProvider>

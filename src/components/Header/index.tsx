@@ -1,7 +1,7 @@
 import { Container, Group, Header, Title } from '@mantine/core';
 import DarkThemeChange from '../DarkThemeChange';
 
-const HeaderComponont = () => {
+const HeaderNav = () => {
   const sx = {
     height: '100%',
   };
@@ -17,4 +17,4 @@ const HeaderComponont = () => {
   );
 };
 
-export default HeaderComponont;
+export default HeaderNav;
