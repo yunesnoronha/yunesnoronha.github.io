@@ -192,7 +192,7 @@ const RenderSkills = ({ isMobile, skills }: { isMobile: boolean; skills: any }) 
             <Text size={'md'}>{skill.name}</Text>
             <Text size={'md'}> {skill.level}</Text>
           </Flex>
-          <Progress mt={0} value={skill.level} color={'cyan'} animate />
+          <Progress mt={0} value={skill.level} color={'cyan'} />
         </Flex>
       ))}
     </>
@@ -223,16 +223,16 @@ export default function Home() {
             alt="Yunes Noronha"
           />
           <Group>
-            <ActionIcon variant="subtle" size={48}>
+            <ActionIcon color={'cyan'} variant="subtle" size={48}>
               <IconBrandLinkedin stroke={1.5} />
             </ActionIcon>
-            <ActionIcon variant="subtle" size={48}>
+            <ActionIcon color={'cyan'} variant="subtle" size={48}>
               <IconMailForward stroke={1.5} />
             </ActionIcon>
-            <ActionIcon variant="subtle" size={48}>
+            <ActionIcon color={'cyan'} variant="subtle" size={48}>
               <IconBrandGithub stroke={1.5} />
             </ActionIcon>
-            <ActionIcon variant="subtle" size={48}>
+            <ActionIcon color={'cyan'} variant="subtle" size={48}>
               <IconBrandWhatsapp stroke={1.5} />
             </ActionIcon>
           </Group>
@@ -242,10 +242,10 @@ export default function Home() {
             experience.
           </Text>
           <Group>
-            <Button leftIcon={<IconDownload />} component="a" href="/CV.pdf" download>
+            <Button color={'cyan'} leftIcon={<IconDownload />} component="a" href="/CV.pdf" download>
               Download CV
             </Button>
-            <Button leftIcon={<IconFileCertificate />} component={Link} to={'/CV'}>
+            <Button color={'cyan'} leftIcon={<IconFileCertificate />} component={Link} to={'/CV'}>
               CV Online
             </Button>
           </Group>

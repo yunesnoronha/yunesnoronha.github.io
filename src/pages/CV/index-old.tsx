@@ -45,25 +45,16 @@ type ExperienceProps = {
   date: string;
   company: string;
   activities: string[];
-  technologies: string[];
 };
 
-const Experience = ({ title, date, company, activities, technologies }: ExperienceProps) => {
+const Experience = ({ title, date, company, activities }: ExperienceProps) => {
   return (
     <Box mb="sm">
       <Title order={5}>{title}</Title>
       <Text mb={4} color={'cyan'} weight={500}>
         {company} | {date}
       </Text>
-      <Text mb={4} color={'black'} weight={500}>
-        Technologies
-      </Text>
-      {technologies.map((tech) => (
-        <Button color={'cyan'} m={2} variant="outline" radius="xl" size="xs" key={tech}>
-          {tech}
-        </Button>
-      ))}
-      <List mt={10}>
+      <List>
         {activities.map((activity) => (
           <List.Item key={activity}>{activity}</List.Item>
         ))}
@@ -132,7 +123,6 @@ const CV = () => {
               date="Jan 2020 – Present"
               company="Claro Brazil"
               activities={['Developed and maintaining an onboarding app available for 20k new customers daily.']}
-              technologies={['React', 'Next.js', 'Typescript', 'Node.js', 'PostgreSQL', 'AWS']}
             />
             <Divider mb={'lg'} />
             <Experience
@@ -143,21 +133,6 @@ const CV = () => {
                 'Integrated and maintained ANATEL (Equivalent to US FCC) Consumidor with Zendesk attending about 1k customers daily;',
                 'Designed and developed an anti-fraud system using biometrics validation with 70% efficiency;',
                 'Supported and guided 500+ automated process with more than $50 million estimated savings.',
-              ]}
-              technologies={[
-                'React',
-                'Next.js',
-                'Typescript',
-                'Node.js',
-                'PostgreSQL',
-                'AWS',
-                'Python',
-                'Django',
-                'Flask',
-                'Mysql',
-                'PostGreSQL',
-                'Redis',
-                'RPA',
               ]}
             />
             <Divider mb={'lg'} />
@@ -170,7 +145,6 @@ const CV = () => {
                 'Test architecture development using TDD (Test Driven Development) and KDT (Keyword Driven Development) resulting in a decrease of approximately 90% in the incidence of bugs and 70% in maintenance costs;',
                 'Automated data collection with real time results available in cloud.',
               ]}
-              technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS', 'MVC', 'ETL Process', 'RPA']}
             />
             <Divider mb={'lg'} />
             <Experience
@@ -178,7 +152,6 @@ const CV = () => {
               date="Nov 2017 – Ago 2018"
               company="Indigosoft"
               activities={['Developed and maintained new features in retail ERP system for Leroy Merlin.']}
-              technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS', 'MVC', 'RPA']}
             />
             <Divider mb={'lg'} />
             <Experience
@@ -188,7 +161,6 @@ const CV = () => {
               activities={[
                 'Digital inclusion project aimed at children, teenagers, elderly and people with special needs in public schools.',
               ]}
-              technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS']}
             />
             <Divider mb={'lg'} />
             <Experience
@@ -198,7 +170,6 @@ const CV = () => {
               activities={[
                 'Digital inclusion project aimed at students and teachers of state public schools, focusing on collaboration trough technology.',
               ]}
-              technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS']}
             />
             <Divider mb={'lg'} />
           </Flex>
