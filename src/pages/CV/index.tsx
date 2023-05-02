@@ -50,7 +50,7 @@ type ExperienceProps = {
 
 const Experience = ({ title, date, company, activities, technologies }: ExperienceProps) => {
   return (
-    <Box mb="sm">
+    <Box mb="sm" p={'sm'}>
       <Title order={5}>{title}</Title>
       <Text mb={4} color={'cyan'} weight={500}>
         {company} | {date}
@@ -131,7 +131,10 @@ const CV = () => {
               title="Full-Stack Developer"
               date="Jan 2020 – Present"
               company="Claro Brazil"
-              activities={['Developed and maintaining an onboarding app available for 20k new customers daily.']}
+              activities={[
+                'Developed and maintaining an onboarding app available for 20k new customers daily.',
+                'Digital onboarding - Exclusive welcome site for the arrival of new customers, where it is possible to have a first contact with the chosen plan and validation of registration data. Built on React js and Node js with Graphql',
+              ]}
               technologies={['React', 'Next.js', 'Typescript', 'Node.js', 'PostgreSQL', 'AWS']}
             />
             <Divider mb={'lg'} />
@@ -140,24 +143,23 @@ const CV = () => {
               date="Nov 2018 – Dec 2019"
               company="Nextel Brazil"
               activities={[
-                'Integrated and maintained ANATEL (Equivalent to US FCC) Consumidor with Zendesk attending about 1k customers daily;',
+                'Develop and maintain a Backoffice application available to all operators and support staff in the company.',
                 'Designed and developed an anti-fraud system using biometrics validation with 70% efficiency;',
-                'Supported and guided 500+ automated process with more than $50 million estimated savings.',
+                'Supported and guided 500+ automated process (RPA) with more than $50 million estimated savings.',
               ]}
               technologies={[
                 'React',
                 'Next.js',
                 'Typescript',
                 'Node.js',
-                'PostgreSQL',
-                'AWS',
                 'Python',
                 'Django',
                 'Flask',
                 'Mysql',
-                'PostGreSQL',
+                'PostgreSQL',
                 'Redis',
                 'RPA',
+                'AWS',
               ]}
             />
             <Divider mb={'lg'} />
@@ -166,9 +168,8 @@ const CV = () => {
               date="ago 2018 – Dec 2018"
               company="Tata Consultancy Services - Sao Paulo, Brazil"
               activities={[
-                'Technical leadership of automation initiatives and the quality team;',
-                'Test architecture development using TDD (Test Driven Development) and KDT (Keyword Driven Development) resulting in a decrease of approximately 90% in the incidence of bugs and 70% in maintenance costs;',
-                'Automated data collection with real time results available in cloud.',
+                'Website development in ASP.net MVC for the accounting area of a large bank.',
+                'Key resource of the squads, facilitating the understanding and development of projects in the accounting area',
               ]}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS', 'MVC', 'ETL Process', 'RPA']}
             />
@@ -177,7 +178,9 @@ const CV = () => {
               title="Software developer"
               date="Nov 2017 – Ago 2018"
               company="Indigosoft"
-              activities={['Developed and maintained new features in retail ERP system for Leroy Merlin.']}
+              activities={[
+                'Process automation in C# for telecom customers, internal and external processes, automating manual operations.',
+              ]}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS', 'MVC', 'RPA']}
             />
             <Divider mb={'lg'} />
@@ -185,9 +188,7 @@ const CV = () => {
               title="Software Developer"
               date="Set 2013 – Apr 2016"
               company="GSF Service"
-              activities={[
-                'Digital inclusion project aimed at children, teenagers, elderly and people with special needs in public schools.',
-              ]}
+              activities={['Development of programs for retail, fiscal and tax solutions in C#.']}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS']}
             />
             <Divider mb={'lg'} />
@@ -196,7 +197,8 @@ const CV = () => {
               date="Jun 2012 – Set 2013"
               company="Nortia It - Sao Paulo, Brazil"
               activities={[
-                'Digital inclusion project aimed at students and teachers of state public schools, focusing on collaboration trough technology.',
+                'Development of C# programs for the retail area.',
+                'Creation of new applications for the retail area. Mobile applications for issuing labels, direct sales and other facilitators.',
               ]}
               technologies={['C#', 'Asp.Net', 'MSQL', 'Oracle', 'IIS']}
             />
