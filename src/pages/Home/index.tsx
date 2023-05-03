@@ -3,7 +3,6 @@ import {
   AppShell,
   Avatar,
   Button,
-  Card,
   Container,
   Divider,
   Flex,
@@ -26,6 +25,7 @@ import {
   IconMailForward,
 } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
+import CardPortfolio from '../../components/CardPortfolio';
 import HeaderNav from '../../components/Header';
 
 const skills = [
@@ -351,34 +351,28 @@ export default function Home() {
             <Title order={1}>Portfolio</Title>
           </Stack>
           <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-            <Card shadow="sm" p="xl">
-              <Card.Section>
-                <Image src={process.env.PUBLIC_URL + 'img/port-site.png'} height={260} alt="Meu site" />
-              </Card.Section>
-
-              <Text weight={600} align={'center'} size="lg" mt="md">
-                Site Pessoal
-              </Text>
-
-              <Text mt="xs" color="dimmed" size="sm">
-                Desenvolvido por Yunes Noronha, 2023.
-              </Text>
-              <Link to={'https://yunesnoronha.com/'}>Yunes Noronha</Link>
-            </Card>
-            <Card shadow="sm" p="xl">
-              <Card.Section>
-                <Image src={process.env.PUBLIC_URL + 'img/port-gsf.png'} height={260} alt="Meu site" />
-              </Card.Section>
-
-              <Text weight={600} align={'center'} size="lg" mt="md">
-                GSF Service
-              </Text>
-
-              <Text mt="xs" color="dimmed" size="sm">
-                Desenvolvido por Yunes Noronha e Andrey Naldoni, 2018.
-              </Text>
-              <Link to={'https://gsfservice.com.br/'}>GSF Service</Link>
-            </Card>
+            <CardPortfolio
+              img={'img/port-site.png'}
+              p="xl"
+              radius={'xs'}
+              sx={{ boxShadow: '2px 2px 5px  #74717143' }}
+              children={undefined}
+              title="Site Pessoal"
+              text="Desenvolvido por Yunes Noronha, 2023."
+              link="https://yunesnoronha.com/"
+              linkText="Yunes Noronha"
+            />
+            <CardPortfolio
+              img={'img/port-gsf.png'}
+              p="xl"
+              radius={'xs'}
+              sx={{ boxShadow: '2px 2px 5px  #74717143' }}
+              children={undefined}
+              title="GSF Service"
+              text="Desenvolvido por Yunes Noronha e Andrey Naldoni, 2018."
+              link="https://gsfservice.com.br/"
+              linkText="GSF Service"
+            />
           </SimpleGrid>
         </Container>
       </Flex>
