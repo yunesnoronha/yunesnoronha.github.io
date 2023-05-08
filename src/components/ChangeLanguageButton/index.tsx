@@ -1,5 +1,4 @@
-import { Box, Center, Group, SegmentedControl, Image } from '@mantine/core';
-import { IconMoon, IconSun } from '@tabler/icons-react';
+import { Center, Group, Image, SegmentedControl } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
