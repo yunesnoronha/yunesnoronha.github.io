@@ -17,22 +17,22 @@
   },
   "home": {
     "content": {
-      "tittlePresentation": "Olá, Eu sou Yunes Noronha",
-      "subTittlePresentation": "Olá, Eu sou Yunes Noronha desenvolvedor Fullstack com {{year}} anos de experiência."
+      "titlePresentation": "Olá, Eu sou Yunes Noronha",
+      "subTitlePresentation": "Olá, Eu sou Yunes Noronha desenvolvedor Fullstack com {{yearExperience}} anos de experiência."
     },
     "about": {
-      "tittleAbout": "Sobre mim",
-      "subTittleAbout": "Sou um desenvolvedor Fullstack apaixonado por tecnologia. Gosto de desenvolver sites simples, limpos e elegantes que agreguem valor real ao usuário final. Simples é sempre o melhor. Tenho mais de 11 anos de experiência com desenvolvimento de software em diversas tecnologias do mercado, grande experiência com desenvolvimento web com React/Node js e design de banco de dados. Grande conhecimento em outras linguagens como C#, Python, Js, Typescript etc. Durante todo esse tempo presenciei grandes mudanças de paradigmas de programação e metodologias de gerenciamento de projetos.",
+      "titleAbout": "Sobre mim",
+      "subTitleAbout": "Sou um desenvolvedor Fullstack apaixonado por tecnologia. Gosto de desenvolver sites simples, limpos e elegantes que agreguem valor real ao usuário final. Simples é sempre o melhor. Tenho mais de 11 anos de experiência com desenvolvimento de software em diversas tecnologias do mercado, grande experiência com desenvolvimento web com React/Node js e design de banco de dados. Grande conhecimento em outras linguagens como C#, Python, Js, Typescript etc. Durante todo esse tempo presenciei grandes mudanças de paradigmas de programação e metodologias de gerenciamento de projetos.",
       "avatarTitle": "Anos de experiência"
     },
     "resume": {
-      "tittleResume": "Um resumo do meu currículo",
+      "titleResume": "Um resumo do meu currículo",
       "experience": {
-        "title": "Um resumo do meu currículo",
+        "title": "Experiência",
         "claro": {
           "title": "Desenvolvedor fullstack Reactjs/Python",
           "employee": "Claro - São Paulo / 2018 - atual",
-          "description": "Desenvolvedor fullstack na Claro. Crie e dê suporte a aplicativos React. RPA Digital - Desenvolvimento e suporte a aplicativos RPA Digital."
+          "description": "Desenvolvedor fullstack na Claro. Desenvolvimento e suporte a aplicativos React. RPA Digital - Desenvolvimento e suporte a aplicativos RPA Digital."
         },
         "tcs": {
           "title": "Desenvolvedor fullstack ASP.net MVC ",
@@ -70,17 +70,17 @@
       }
     },
     "skill": {
-      "tittleSkill": "Habilidades"
+      "titleSkill": "Habilidades"
     },
     "personal": {
-      "tittlePersonal": "Habilidades pessoais"
+      "titlePersonal": "Habilidades pessoais"
     },
     "portfolio": {
-      "tittlePortfolio": "Portfólio"
+      "titlePortfolio": "Portfólio"
     }
   },
   "phisicalResume": {
-    "tittleResume": "Yunes Noronha",
+    "titleResume": "Yunes Noronha",
     "description": "Desenvolvedor Full-Stack React js",
     "titleExperience": "Últimas experiências",
     "experience": {

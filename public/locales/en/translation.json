@@ -17,18 +17,18 @@
   },
   "home": {
     "content": {
-      "tittlePresentation": "Hey, I´m Yunes Noronha",
-      "subTittlePresentation": "Hi, I´m Yunes Noronha Fullstack Developer from Brazil with {{year}} years of experience."
+      "titlePresentation": "Hey, I´m Yunes Noronha",
+      "subTitlePresentation": "Hi, I´m Yunes Noronha Fullstack Developer from Brazil with {{yearExperience}} years of experience."
     },
     "about": {
-      "tittleAbout": "Know Me More",
-      "subTittleAbout": "I'm a Fullstack developer passionate about technology. I like to develop simple, clean and elegant websites that provide real value to the end user. Simple is always the best. I have 11+ years of experience with software development in various technologies on the market, great experience with web development with React/Node js and database design. Great knowledge in other languages like C#, Python, Js, Typescript etc. All this time I have seen major programming paradigm shifts as well as project management methodologies.",
+      "titleAbout": "Know Me More",
+      "subTitleAbout": "I'm a Fullstack developer passionate about technology. I like to develop simple, clean and elegant websites that provide real value to the end user. Simple is always the best. I have 11+ years of experience with software development in various technologies on the market, great experience with web development with React/Node js and database design. Great knowledge in other languages like C#, Python, Js, Typescript etc. All this time I have seen major programming paradigm shifts as well as project management methodologies.",
       "avatarTitle": "Years of Experience"
     },
     "resume": {
-      "tittleResume": "A summary of My Resume",
+      "titleResume": "A summary of My Resume",
       "experience": {
-        "title": "A summary of My Resume",
+        "title": "My Experience",
         "claro": {
           "title": "Fullstack developer Reactjs/Python",
           "employee": "Claro - São Paulo / 2018 - actual",
@@ -70,17 +70,17 @@
       }
     },
     "skill": {
-      "tittleSkill": "My Skills"
+      "titleSkill": "My Skills"
     },
     "personal": {
-      "tittlePersonal": "Personal skills"
+      "titlePersonal": "Personal skills"
     },
     "portfolio": {
-      "tittlePortfolio": "Portfolio"
+      "titlePortfolio": "Portfolio"
     }
   },
   "phisicalResume": {
-    "tittleResume": "Yunes Noronha",
+    "titleResume": "Yunes Noronha",
     "description": "Full-Stack Developer",
     "titleExperience": "RECENT EXPERIENCE",
     "experience": {

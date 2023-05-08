@@ -1,4 +1,5 @@
 import { Container, Group, Header, Title, useMantineColorScheme } from '@mantine/core';
+import ChangeLanguageButton from '../ChangeLanguageButton';
 import DarkThemeChange from '../DarkThemeChange';
 
 const noPrint = {
@@ -19,6 +20,7 @@ const HeaderNav = () => {
         <Group position="apart" noWrap align={'center'} sx={sx}>
           <Title order={2}>Yunes Noronha</Title>
           <DarkThemeChange />
+          <ChangeLanguageButton />
         </Group>
       </Container>
     </Header>

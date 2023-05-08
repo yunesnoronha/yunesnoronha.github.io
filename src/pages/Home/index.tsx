@@ -24,6 +24,8 @@ import {
   IconFileCertificate,
   IconMailForward,
 } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import CardPortfolio from '../../components/CardPortfolio';
 import HeaderNav from '../../components/Header';
@@ -90,60 +92,58 @@ const personalSkills = [
 ];
 const education = [
   {
-    name: 'MBA in Information Technology Management',
+    name: 'home.resume.education.impacta.title',
     avatar: '/img/impacta.jfif',
     date: '2018 - 2019',
-    company: 'College Impacta Tecnologia',
-    description: 'Masters Degree in Information Technology Management.',
+    company: 'home.resume.education.impacta.employee',
+    description: 'home.resume.education.impacta.description',
   },
   {
-    name: 'Technologist Systems analysis and development',
+    name: 'home.resume.education.fatec.title',
     avatar: '/img/fatec.jfif',
     date: '2014 - 2017',
-    company: 'Fatec - Praia Grande',
-    description: 'Graduated in Systems Analysis and Development by Fatec',
+    company: 'home.resume.education.fatec.employee',
+    description: 'home.resume.education.fatec.description',
   },
   {
-    name: 'IT Technician - Systems Development',
+    name: 'home.resume.education.etec.title',
     avatar: '/img/etec.png',
     date: '2011 - 2012',
-    company: 'Etec - Praia Grande',
-    description: 'IT technician with a focus on systems development',
+    company: 'home.resume.education.etec.employee',
+    description: 'home.resume.education.etec.description',
   },
 ];
 const experience = [
   {
-    name: 'Fullstack developer Reactjs/Python',
+    name: 'home.resume.experience.claro.title',
     avatar: '/img/claro.jfif',
     date: '2018 - actual',
-    company: 'Claro - São Paulo',
-    description:
-      'Fullstack Developer at Claro. Create and support React applications. RPA Digital - Create and support RPA Digital applications.',
+    company: 'home.resume.experience.claro.employee',
+    description: 'home.resume.experience.claro.description',
   },
   {
-    name: 'Developer at TCS',
+    name: 'home.resume.experience.tcs.title',
     avatar: '/img/tcs.jfif',
     date: '2018 - 2018',
-    company: 'Tata Consultancy Services · São Paulo',
-    description:
-      'Fullstack Developer at TCS. Build solutions in ASP.net MVC and Microsoft SQL Server. Build RPA solutions to legacy systems.',
+    company: 'home.resume.experience.tcs.employee',
+    description: 'home.resume.experience.tcs.description',
   },
   {
-    name: 'Developer at Indigosoft',
+    name: 'home.resume.experience.indigo.title',
     avatar: '/img/indigo.jfif',
     date: '2017 - 2018',
-    company: 'Indigosoft',
-    description: 'C# developer at Indigosoft. Build RPA solutions in C# applications at Telecom customers.',
+    company: 'home.resume.experience.indigo.employee',
+    description: 'home.resume.experience.indigo.description',
   },
   {
-    name: 'Developer at GSF Service',
+    name: 'home.resume.experience.gsf.title',
     avatar: '/img/gsf.jfif',
     date: '2013 - 2016',
-    company: 'GSF Service',
-    description: 'Build solutions in ASP.net MVC and Microsoft SQL Server at Retail Customer. ',
+    company: 'home.resume.experience.gsf.employee',
+    description: 'home.resume.experience.gsf.description',
   },
 ];
-const RenderEducation = () => {
+const RenderEducation = ({ t }: { t: any }) => {
   return (
     <>
       {education.map((e) => (
@@ -151,12 +151,10 @@ const RenderEducation = () => {
           <Avatar mt={'sm'} src={process.env.PUBLIC_URL + e.avatar} />
           <Stack>
             <Text fz="xl" fw={500}>
-              {e.name}
+              {t(e.name)}
             </Text>
-            <Text c="dimmed">
-              {e.company} / {e.date}
-            </Text>
-            <Text lineClamp={3}>{e.description}</Text>
+            <Text c="dimmed">{t(e.company)}</Text>
+            <Text lineClamp={3}>{t(e.description)}</Text>
             <Divider />
           </Stack>
         </Flex>
@@ -164,7 +162,7 @@ const RenderEducation = () => {
     </>
   );
 };
-const RenderXp = () => {
+const RenderXp = ({ t }: { t: any }) => {
   return (
     <>
       {experience.map((e) => (
@@ -172,12 +170,10 @@ const RenderXp = () => {
           <Avatar mt={'sm'} src={process.env.PUBLIC_URL + e.avatar} />
           <Stack key={e.name}>
             <Text fz="xl" fw={500}>
-              {e.name}
+              {t(e.name)}
             </Text>
-            <Text c="dimmed">
-              {e.company} / {e.date}
-            </Text>
-            <Text lineClamp={3}>{e.description}</Text>
+            <Text c="dimmed">{t(e.company)}</Text>
+            <Text lineClamp={3}>{t(e.description)}</Text>
             <Divider />
           </Stack>
         </Flex>
@@ -201,7 +197,7 @@ const RenderSkills = ({ isMobile, skills }: { isMobile: boolean; skills: any }) 
   );
 };
 
-const RenderHome = ({ yearExperience }: { yearExperience: number }) => {
+const RenderHome = ({ yearExperience, t }: { yearExperience: number; t: any }) => {
   return (
     <Stack align={'center'} mt={'md'}>
       <Image
@@ -237,9 +233,9 @@ const RenderHome = ({ yearExperience }: { yearExperience: number }) => {
           <IconBrandWhatsapp stroke={1.5} />
         </ActionIcon>
       </Group>
-      <Title order={1}>Hey, I´m Yunes Noronha</Title>
+      <Title order={1}>{t('home.content.titlePresentation')}</Title>
       <Text size={'lg'} color={'dimmed'}>
-        Hi, I´m <b>Yunes Noronha</b> Fullstack Developer from <b>Brazil</b> with {yearExperience}+ years of experience.
+        {t('home.content.subTitlePresentation', { yearExperience })}
       </Text>
       <Group>
         <Button
@@ -249,36 +245,29 @@ const RenderHome = ({ yearExperience }: { yearExperience: number }) => {
           href={process.env.PUBLIC_URL + '/CV/CV.pdf'}
           download
         >
-          Download CV
+          {t('button.DownloadResume.title')}
         </Button>
         <Button color={'cyan'} leftIcon={<IconFileCertificate />} component={Link} to={'/CV'}>
-          CV Online
+          {t('button.ShowCv.title')}
         </Button>
       </Group>
     </Stack>
   );
 };
-const RenderAbout = ({ yearExperience }: { yearExperience: number }) => {
+const RenderAbout = ({ yearExperience, t }: { yearExperience: number; t: any }) => {
   return (
     <Container mb={'md'}>
       <Stack align={'center'} mt={'md'}>
-        <Title order={1}>Know Me More</Title>
+        <Title order={1}> {t('home.about.titleAbout')}</Title>
         <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
           <Text size="lg" ta="justify">
-            I'm a Fullstack developer passionate about technology. I like to develop simple, clean and elegant websites
-            that provide real value to the end user. Simple is always the best. <br />I have {yearExperience}+ years of
-            experience with software development in various technologies on the market, great experience with web
-            development with React/Node js and database design. Great knowledge in other languages like C#, Python, Js,
-            Typescript etc. <br />
-            All this time I have seen major programming paradigm shifts as well as project management methodologies.
+            {t('home.about.subTitleAbout')}
           </Text>
           <Stack align={'Center'} justify={'flex-start'}>
             <Avatar alt="10" color="cyan" size={100} radius="xl">
               {yearExperience}
             </Avatar>
-            <Title order={3}>
-              Years of <b>Experience</b>
-            </Title>
+            <Title order={3}>{t('home.about.avatarTitle')}</Title>
           </Stack>
         </SimpleGrid>
       </Stack>
@@ -286,36 +275,36 @@ const RenderAbout = ({ yearExperience }: { yearExperience: number }) => {
   );
 };
 
-const RenderSummary = () => {
+const RenderSummary = ({ t }: { t: any }) => {
   return (
     <Container mb={'md'}>
       <Stack align={'center'} mt={'md'}>
-        <Title order={1}>A summary of My Resume</Title>
+        <Title order={1}>{t('home.resume.titleResume')}</Title>
       </Stack>
       <SimpleGrid cols={2} mt={'md'} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
         <Flex gap={'md'}>
           <Divider size="xl" color={'cyan'} orientation="vertical" />
           <Stack align={'flex-start'}>
-            <Title order={3}>My Education</Title>
-            <RenderEducation />
+            <Title order={3}>{t('home.resume.education.title')}</Title>
+            <RenderEducation t={t} />
           </Stack>
         </Flex>
         <Flex gap={'md'}>
           <Divider size="xl" color={'cyan'} orientation="vertical" />
           <Stack align={'flex-start'}>
-            <Title order={3}>My Experience</Title>
-            <RenderXp />
+            <Title order={3}>{t('home.resume.experience.title')}</Title>
+            <RenderXp t={t} />
           </Stack>
         </Flex>
       </SimpleGrid>
     </Container>
   );
 };
-const RenderPortfolio = () => {
+const RenderPortfolio = ({ t }: { t: any }) => {
   return (
     <Container mb={'md'}>
       <Stack align={'center'} mt={'md'}>
-        <Title order={1}>Portfolio</Title>
+        <Title order={1}>{t('home.portfolio.titlePortfolio')}</Title>
       </Stack>
       <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
         <CardPortfolio
@@ -348,6 +337,7 @@ export default function Home() {
   const yearExperience = new Date().getFullYear() - 2012;
   const isMobile: boolean = useMediaQuery('(max-width: 767px)');
   const { colorScheme } = useMantineColorScheme();
+  const { t } = useTranslation();
   return (
     <AppShell
       header={<HeaderNav />}
@@ -360,18 +350,18 @@ export default function Home() {
       })}
     >
       <Container bg={colorScheme === 'dark' ? 'dark' : '#F8F9FA'} mb={'lg'}>
-        <RenderHome yearExperience={yearExperience} />
+        <RenderHome yearExperience={yearExperience} t={t} />
       </Container>
       <Flex bg={colorScheme === 'dark' ? 'dark' : '#ffff'}>
-        <RenderAbout yearExperience={yearExperience} />
+        <RenderAbout yearExperience={yearExperience} t={t} />
       </Flex>
       <Flex bg={colorScheme === 'dark' ? 'dark' : '#F8F9FA'} mb={'md'}>
-        <RenderSummary />
+        <RenderSummary t={t} />
       </Flex>
       <Flex bg={colorScheme === 'dark' ? 'dark' : '#ffff'} mb={'md'} p={'md'} wrap="wrap">
         <Container>
           <Title align="center" m={'md'} order={1}>
-            My Skills
+            {t('home.skill.titleSkill')}
           </Title>
           <Flex wrap={'wrap'} gap={'xl'} justify={'space-around'}>
             <RenderSkills isMobile={isMobile} skills={skills} />
@@ -381,7 +371,7 @@ export default function Home() {
       <Flex bg={colorScheme === 'dark' ? 'dark' : '#F8F9FA'} mb={'md'} p={'md'} wrap="wrap">
         <Container>
           <Title align="center" m={'md'} order={1}>
-            Personal Skills
+            {t('home.personal.titlePersonal')}
           </Title>
           <Flex wrap={'wrap'} gap={'xl'} justify={'space-around'}>
             <RenderSkills isMobile={isMobile} skills={personalSkills} />
@@ -389,7 +379,7 @@ export default function Home() {
         </Container>
       </Flex>
       <Flex bg={colorScheme === 'dark' ? 'dark' : '#ffff '} gap="md">
-        <RenderPortfolio />
+        <RenderPortfolio t={t} />
       </Flex>
     </AppShell>
   );
