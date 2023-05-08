@@ -1,0 +1,151 @@
+{
+  "header": {
+    "DarkMode": {
+      "Dark": "Dark",
+      "Light": "Light"
+    }
+  },
+  "button": {
+    "DownloadResume": {
+      "label": "Baixar curriculo",
+      "title": "Baixar meu curriculo"
+    },
+    "ShowCv": {
+      "label": "Exibir curriculo",
+      "title": "Exibir meu curriculo"
+    }
+  },
+  "home": {
+    "content": {
+      "tittlePresentation": "Olá, Eu sou Yunes Noronha",
+      "subTittlePresentation": "Olá, Eu sou Yunes Noronha desenvolvedor Fullstack com {{year}} anos de experiência."
+    },
+    "about": {
+      "tittleAbout": "Sobre mim",
+      "subTittleAbout": "Sou um desenvolvedor Fullstack apaixonado por tecnologia. Gosto de desenvolver sites simples, limpos e elegantes que agreguem valor real ao usuário final. Simples é sempre o melhor. Tenho mais de 11 anos de experiência com desenvolvimento de software em diversas tecnologias do mercado, grande experiência com desenvolvimento web com React/Node js e design de banco de dados. Grande conhecimento em outras linguagens como C#, Python, Js, Typescript etc. Durante todo esse tempo presenciei grandes mudanças de paradigmas de programação e metodologias de gerenciamento de projetos.",
+      "avatarTitle": "Anos de experiência"
+    },
+    "resume": {
+      "tittleResume": "Um resumo do meu currículo",
+      "experience": {
+        "title": "Um resumo do meu currículo",
+        "claro": {
+          "title": "Desenvolvedor fullstack Reactjs/Python",
+          "employee": "Claro - São Paulo / 2018 - atual",
+          "description": "Desenvolvedor fullstack na Claro. Crie e dê suporte a aplicativos React. RPA Digital - Desenvolvimento e suporte a aplicativos RPA Digital."
+        },
+        "tcs": {
+          "title": "Desenvolvedor fullstack ASP.net MVC ",
+          "employee": "Tata Consultancy Services · São Paulo / 2018 - 2018",
+          "description": "Desenvolvedor fullstack na TCS. Construir soluções em ASP.net MVC e Microsoft SQL Server. Criação de soluções de RPA para sistemas legados."
+        },
+        "indigo": {
+          "title": "Desenvolvedor",
+          "employee": "Indigosoft / 2017 - 2018",
+          "description": "Desenvolvedor C# na Indigosoft. Criação de soluções de RPA C# para clientes de Telecom."
+        },
+        "gsf": {
+          "title": "Desenvolvedor C# na GSF Service",
+          "employee": "GSF Service / 2013 - 2016",
+          "description": "Desenvolvimento de soluções em ASP.Net MVC e Microsoft SQL Server no setor de varejo."
+        }
+      },
+      "education": {
+        "title": "Formação academica",
+        "impacta": {
+          "title": "MBA em Gestão da tecnologia da informação",
+          "employee": "Faculdade Impacta Tecnologia / 2018 - 2019",
+          "description": "Pós graduação em Gestão da tecnologia da informação."
+        },
+        "fatec": {
+          "title": "Análise e desenvolvimento de sistemas",
+          "employee": "Fatec - Praia Grande / 2014 - 2017",
+          "description": "Graduação em Análise e desenvolvimento de sistemas"
+        },
+        "etec": {
+          "title": "Técnico de informática e desenvolvimento de sistemas",
+          "employee": "Etec - Praia Grande / 2011 - 2012",
+          "description": "Técnico de informática e desenvolvimento de sistemas."
+        }
+      }
+    },
+    "skill": {
+      "tittleSkill": "Habilidades"
+    },
+    "personal": {
+      "tittlePersonal": "Habilidades pessoais"
+    },
+    "portfolio": {
+      "tittlePortfolio": "Portfólio"
+    }
+  },
+  "phisicalResume": {
+    "tittleResume": "Yunes Noronha",
+    "description": "Desenvolvedor Full-Stack React js",
+    "titleExperience": "Últimas experiências",
+    "experience": {
+      "claro": {
+        "title": "Desenvolvedor Full-Stack",
+        "employee": "Claro - São Paulo / 2018 - atual",
+        "titleTechnologies": "Tecnologia",
+        "description": [
+          "Desenvolvimento e sustentação de aplicativos e  integração disponível para 20 mil novos clientes diariamente;",
+          "Onboarding digital - Site de boas-vindas exclusivo para chegada de novos clientes, onde é possível ter um primeiro contato com o plano escolhido e validação dos dados cadastrais. Construído em React js e Node js com Graphql."
+        ]
+      },
+      "nextel": {
+        "title": "Desenvolvedor Full-Stack - Python/RPA",
+        "employee": "Nextel Brasil | Nov 2018 – Dez 2019",
+        "titleTechnologies": "Tecnologia",
+        "description": [
+          "Desenvolvimento e sustentação de aplicações de Backoffice disponível para todos os operadores da empresa;",
+          "Desenvolvimento de sistema antifraude utilizando validação biométrica com 70% de eficiência;",
+          "Suporte e orientação de mais de 500 processos automatizados (RPA) com economia estimada de mais de US$ 50 milhões."
+        ]
+      },
+      "tcs": {
+        "title": "Analista desenvolvedor",
+        "employee": "Tata Consultancy Services - Sao Paulo, Brasil | ago 2018 – Dez 2018",
+        "titleTechnologies": "Tecnologia",
+        "description": [
+          "Desenvolvimento de sistemas em ASP.net MVC para a área contábil de um grande banco;",
+          "Recurso chave das squads, facilitando o entendimento e desenvolvimento de projetos na área contábil."
+        ]
+      },
+      "indigo": {
+        "title": "Desenvolvedor de software",
+        "employee": "Indigosoft | Nov 2017 – Ago 2018",
+        "titleTechnologies": "Tecnologia",
+        "description": [
+          "Automação de processos em C# para clientes de telecom, processos internos e externos, automatizando operações manuais."
+        ]
+      },
+      "gsf": {
+        "title": "Desenvolvedor de software",
+        "employee": "GSF Service | Set 2013 – Apr 2016",
+        "titleTechnologies": "Tecnologia",
+        "description": [
+          "Desenvolvimento de programas para soluções de varejo, fiscais e tributárias em C#;",
+          "Desenvolvimento de soluções de Banco de Dados em SQL Server."
+        ]
+      },
+      "nortia": {
+        "title": "Desenvolvedor de Software Jr",
+        "employee": "Nortia It - Sao Paulo, Brasil | Jun 2012 – Set 2013",
+        "titleTechnologies": "Tecnologia",
+        "description": [
+          "Desenvolvimento de programas C# para a área de varejo;",
+          "Criação de novas aplicações para a área de retalho. Aplicativos móveis para emissão de etiquetas, vendas diretas e outros facilitadores."
+        ]
+      }
+    },
+    "education": {},
+    "contact": {
+      "city": "São Paulo, Brasil",
+      "phone": "+55 13 98194-9758",
+      "email": "yunesnoronha@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/yunesnoronha/",
+      "site": "https://www.yunesnoronha.com.br/"
+    }
+  }
+}
