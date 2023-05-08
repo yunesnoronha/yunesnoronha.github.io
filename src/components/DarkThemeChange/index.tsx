@@ -15,7 +15,6 @@ export default function DarkThemeChange() {
             label: (
               <Center>
                 <IconSun size="1rem" stroke={1.5} />
-                <Box ml={10}>Light</Box>
               </Center>
             ),
           },
@@ -24,7 +23,6 @@ export default function DarkThemeChange() {
             label: (
               <Center>
                 <IconMoon size="1rem" stroke={1.5} />
-                <Box ml={10}>Dark</Box>
               </Center>
             ),
           },

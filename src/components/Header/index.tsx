@@ -19,8 +19,10 @@ const HeaderNav = () => {
       <Container sx={sx}>
         <Group position="apart" noWrap align={'center'} sx={sx}>
           <Title order={2}>Yunes Noronha</Title>
-          <DarkThemeChange />
-          <ChangeLanguageButton />
+          <Group position="right" align={'center'} grow>
+            <DarkThemeChange />
+            <ChangeLanguageButton />
+          </Group>
         </Group>
       </Container>
     </Header>

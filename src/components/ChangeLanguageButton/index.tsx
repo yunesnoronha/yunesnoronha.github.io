@@ -24,8 +24,6 @@ export default function ChangeLanguageButton() {
             label: (
               <Center>
                 <Image height={'1rem'} width={'1rem'} src={process.env.PUBLIC_URL + '/icon/br.png'} alt="Português" />
-
-                <Box ml={10}>Port</Box>
               </Center>
             ),
           },
@@ -34,7 +32,6 @@ export default function ChangeLanguageButton() {
             label: (
               <Center>
                 <Image height={'1rem'} width={'1rem'} src={process.env.PUBLIC_URL + '/icon/us.png'} alt="Português" />
-                <Box ml={10}>Eng</Box>
               </Center>
             ),
           },
