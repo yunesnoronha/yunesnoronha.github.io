@@ -1,0 +1,151 @@
+{
+  "header": {
+    "DarkMode": {
+      "Dark": "Dark",
+      "Light": "Light"
+    }
+  },
+  "button": {
+    "DownloadResume": {
+      "label": "Download Resume",
+      "title": "Download my Resume"
+    },
+    "ShowCv": {
+      "label": "Show Resume",
+      "title": "Show my Resume"
+    }
+  },
+  "home": {
+    "content": {
+      "titlePresentation": "Hey, I´m Yunes Noronha",
+      "subTitlePresentation": "Hi, I´m Yunes Noronha Fullstack Developer from Brazil with {{yearExperience}} years of experience."
+    },
+    "about": {
+      "titleAbout": "Know Me More",
+      "subTitleAbout": "I'm a Fullstack developer passionate about technology. I like to develop simple, clean and elegant websites that provide real value to the end user. Simple is always the best. I have 11+ years of experience with software development in various technologies on the market, great experience with web development with React/Node js and database design. Great knowledge in other languages like C#, Python, Js, Typescript etc. All this time I have seen major programming paradigm shifts as well as project management methodologies.",
+      "avatarTitle": "Years of Experience"
+    },
+    "resume": {
+      "titleResume": "A summary of My Resume",
+      "experience": {
+        "title": "My Experience",
+        "claro": {
+          "title": "Fullstack developer Reactjs/Python",
+          "employee": "Claro - São Paulo / 2018 - actual",
+          "description": "Fullstack Developer at Claro. Create and support React applications. RPA Digital - Create and support RPA Digital applications."
+        },
+        "tcs": {
+          "title": "Developer at TCS",
+          "employee": "Tata Consultancy Services · São Paulo / 2018 - 2018",
+          "description": "Fullstack Developer at TCS. Build solutions in ASP.net MVC and Microsoft SQL Server. Build RPA solutions to legacy systems."
+        },
+        "indigo": {
+          "title": "Developer at Indigosoft",
+          "employee": "Indigosoft / 2017 - 2018",
+          "description": "C# developer at Indigosoft. Build RPA solutions in C# applications at Telecom customers."
+        },
+        "gsf": {
+          "title": "Developer at GSF Service",
+          "employee": "GSF Service / 2013 - 2016",
+          "description": "Build solutions in ASP.net MVC and Microsoft SQL Server at Retail Customer."
+        }
+      },
+      "education": {
+        "title": "My Education",
+        "impacta": {
+          "title": "MBA in Information Technology Management",
+          "employee": "College Impacta Tecnologia / 2018 - 2019",
+          "description": "Masters Degree in Information Technology Management."
+        },
+        "fatec": {
+          "title": "Technologist Systems analysis and development",
+          "employee": "Fatec - Praia Grande / 2014 - 2017",
+          "description": "Graduated in Systems Analysis and Development by Fatec."
+        },
+        "etec": {
+          "title": "IT Technician - Systems Development",
+          "employee": "Etec - Praia Grande / 2011 - 2012",
+          "description": "IT technician with a focus on systems development."
+        }
+      }
+    },
+    "skill": {
+      "titleSkill": "My Skills"
+    },
+    "personal": {
+      "titlePersonal": "Personal skills"
+    },
+    "portfolio": {
+      "titlePortfolio": "Portfolio"
+    }
+  },
+  "phisicalResume": {
+    "titleResume": "Yunes Noronha",
+    "description": "Full-Stack Developer",
+    "titleExperience": "RECENT EXPERIENCE",
+    "experience": {
+      "claro": {
+        "title": "Full-Stack Developer",
+        "employee": "Claro - São Paulo / 2018 - actual",
+        "titleTechnologies": "Technologies",
+        "description": [
+          "Developed and maintaining an onboarding app available for 20k new customers daily.",
+          "Digital onboarding - Exclusive welcome site for the arrival of new customers, where it is possible to have a first contact with the chosen plan and validation of registration data. Built on React js and Node js with Graphql."
+        ]
+      },
+      "nextel": {
+        "title": "Full-Stack Developer - Python/RPA",
+        "employee": "Nextel Brazil | Nov 2018 – Dec 2019",
+        "titleTechnologies": "Technologies",
+        "description": [
+          "Develop and maintain a Backoffice application available to all operators and support staff in the company;",
+          "Designed and developed an anti-fraud system using biometrics validation with 70% efficiency;",
+          "Supported and guided 500+ automated process (RPA) with more than $50 million estimated savings."
+        ]
+      },
+      "tcs": {
+        "title": "Analyst Developer",
+        "employee": "Tata Consultancy Services - Sao Paulo, Brazil | ago 2018 – Dec 2018",
+        "titleTechnologies": "Technologies",
+        "description": [
+          "Website development in ASP.net MVC for the accounting area of a large bank;",
+          "Key resource of the squads, facilitating the understanding and development of projects in the accounting area."
+        ]
+      },
+      "indigo": {
+        "title": "Software Developer",
+        "employee": "Indigosoft | Nov 2017 – Ago 2018",
+        "titleTechnologies": "Technologies",
+        "description": [
+          "Process automation in C# for telecom customers, internal and external processes, automating manual operations."
+        ]
+      },
+      "gsf": {
+        "title": "Software Developer",
+        "employee": "GSF Service | Set 2013 – Apr 2016",
+        "titleTechnologies": "Technologies",
+        "description": [
+          "Development of programs for retail, fiscal and tax solutions in C#;",
+          "Development of Database solutions in SQL Server."
+        ]
+      },
+      "nortia": {
+        "title": "Software Developer Jr",
+        "employee": "Nortia It - Sao Paulo, Brazil | Jun 2012 – Set 2013",
+        "titleTechnologies": "Technologies",
+        "description": [
+          "Development of C# programs for the retail area;",
+          "Creation of new applications for the retail area. Mobile applications for issuing labels, direct sales and other facilitators."
+        ]
+      }
+    },
+    "education": {},
+    "contact": {
+      "city": "Sao Paulo, Brazil",
+      "phone": "+55 13 98194-9758",
+      "email": "yunesnoronha@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/yunesnoronha/",
+      "site": "https://www.yunesnoronha.com.br/"
+    }
+  }
+}
