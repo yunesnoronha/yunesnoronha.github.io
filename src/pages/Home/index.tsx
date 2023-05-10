@@ -24,7 +24,7 @@ import {
   IconFileCertificate,
   IconMailForward,
 } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import CardPortfolio from '../../components/CardPortfolio';
@@ -203,7 +203,7 @@ const RenderHome = ({ yearExperience, t }: { yearExperience: number; t: any }) =
       <Image
         width={256}
         radius={256}
-        sx={{ border: '3px solid #E9ECEF', borderRadius: 256 }}
+        sx={{ border: '4px solid #E9ECEF', borderRadius: 256, boxSizing: 'content-box' }}
         src={process.env.PUBLIC_URL + 'img/yunes-cover.jpeg'}
         alt="Yunes Noronha"
       />
@@ -242,7 +242,7 @@ const RenderHome = ({ yearExperience, t }: { yearExperience: number; t: any }) =
           color={'cyan'}
           leftIcon={<IconDownload />}
           component="a"
-          href={process.env.PUBLIC_URL + '/CV/CV.pdf'}
+          href={process.env.PUBLIC_URL + i18next.language === 'pt' ? '/CV/CV-pt.pdf' : '/CV/CV.pdf'}
           download
         >
           {t('button.DownloadResume.title')}
@@ -338,6 +338,7 @@ export default function Home() {
   const isMobile: boolean = useMediaQuery('(max-width: 767px)');
   const { colorScheme } = useMantineColorScheme();
   const { t } = useTranslation();
+  console.log(i18next.language);
   return (
     <AppShell
       header={<HeaderNav />}
