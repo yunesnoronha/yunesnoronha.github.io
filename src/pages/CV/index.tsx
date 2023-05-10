@@ -57,7 +57,7 @@ const Experience = ({ title, date, company, activities, technologies, t }: Exper
       <Text mb={4} color={'cyan'} weight={500}>
         {company}
       </Text>
-      <Text mb={4} color={'black'} weight={500}>
+      <Text mb={4} weight={500}>
         {t('phisicalResume.technologiesTitle')}
       </Text>
       {technologies.map((tech) => (
