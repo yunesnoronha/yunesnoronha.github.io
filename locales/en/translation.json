@@ -83,6 +83,15 @@
     "titleResume": "Yunes Noronha",
     "description": "Full-Stack Developer",
     "titleExperience": "RECENT EXPERIENCE",
+    "technologiesTitle": "Technologies",
+    "skillTitle": "KEY SKILLS",
+    "languageTitle": "Languages",
+    "languages": {
+      "englishTitle": "English",
+      "portugueseTitle": "Portuguese",
+      "englishLevel": "Basic",
+      "portugueseLevel": "Native"
+    },
     "experience": {
       "claro": {
         "title": "Full-Stack Developer",

@@ -83,6 +83,15 @@
     "titleResume": "Yunes Noronha",
     "description": "Desenvolvedor Full-Stack React js",
     "titleExperience": "Últimas experiências",
+    "technologiesTitle": "Tecnologias",
+    "skillTitle": "HABILIDADES",
+    "languageTitle": "Linguagens",
+    "languages": {
+      "englishTitle": "Inglês",
+      "portugueseTitle": "Português",
+      "englishLevel": "Básico",
+      "portugueseLevel": "Nativo"
+    },
     "experience": {
       "claro": {
         "title": "Desenvolvedor Full-Stack",
