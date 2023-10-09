@@ -1,0 +1,29 @@
+:root {
+    color-scheme: var(--mantine-color-scheme);
+  }
+
+::-webkit-scrollbar {        
+    width: 8px;
+    height: 6px;
+    right: 2px;
+    
+}   
+
+::-webkit-scrollbar-thumb {
+    /* background-color: #E3FAFC; */
+    background-color: #15aabf;
+    border-radius: 6px;
+    
+}
+
+/* :hover::-webkit-scrollbar {
+    width: 8px;
+}  */
+        
+/* *:hover::-webkit-scrollbar-thumb {
+    background-color: #C5F6FA;
+} */
+/* body {
+  scroll-behavior: smooth !important;
+  overflow: auto !important;;      
+} */

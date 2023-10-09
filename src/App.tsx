@@ -1,12 +1,14 @@
 import { ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core';
 
 import { useState } from 'react';
+import './styles/global.css';
 
 import { Route, Routes } from 'react-router-dom';
 import CV from './pages/CV';
 import Home from './pages/Home';
 
 import './config/i18next';
+
 export default function App() {
   const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
   const toggleColorScheme = (value?: ColorScheme) => {

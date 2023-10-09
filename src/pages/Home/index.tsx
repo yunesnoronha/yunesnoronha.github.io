@@ -347,6 +347,8 @@ export default function Home() {
           backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
           paddingLeft: 0,
           paddingRight: 0,
+          overflow: 'auto',
+          scrollBehavior: 'smooth',
         },
       })}
     >
